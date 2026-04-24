@@ -4,7 +4,6 @@ const RandomStringGenerator = () => {
   const [length, setLength] = useState(10);
   const [randomString, setRandomString] = useState("");
 
-  // 🔥 useCallback
   const generateString = useCallback(() => {
     const characters =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -18,7 +17,6 @@ const RandomStringGenerator = () => {
     setRandomString(result);
   }, [length]);
 
-  // 🔥 useEffect
   useEffect(() => {
     generateString();
   }, [generateString]);
@@ -30,7 +28,6 @@ const RandomStringGenerator = () => {
         Random String Generator
       </h1>
 
-      {/* INPUT */}
       <div className="mb-4">
         <label className="mr-2">Length:</label>
         <input
@@ -42,7 +39,6 @@ const RandomStringGenerator = () => {
         />
       </div>
 
-      {/* BUTTON */}
       <button
         onClick={generateString}
         className="bg-[#5bf4de] text-black px-6 py-2 rounded mb-6 font-semibold hover:scale-105 transition"
@@ -50,7 +46,6 @@ const RandomStringGenerator = () => {
         Generate
       </button>
 
-      {/* OUTPUT */}
       <div className="bg-black px-6 py-4 rounded-lg text-lg tracking-widest break-all text-center max-w-md">
         {randomString}
       </div>
