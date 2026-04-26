@@ -71,12 +71,6 @@ npm run dev
 
 ---
 
-## 🌐 Live Demo
-
-(Add your Vercel link here)
-
----
-
 ## ✨ Future Improvements
 
 * Copy to clipboard feature
