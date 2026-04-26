@@ -1,16 +1,91 @@
-# React + Vite
+# 🔐 Random String Generator (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient React application that generates random strings based on user-defined length. Built using core React hooks and client-side routing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🎲 Generate random strings instantly
+* 🔢 Customizable string length
+* ⚡ Fast and responsive UI
+* 🔁 Auto-generate on input change
+* 🔗 Client-side routing using React Router
+* 📱 Responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Vite)
+* Tailwind CSS
+* React Hooks:
+
+  * useState
+  * useCallback
+  * useEffect
+* React Router DOM
+
+---
+
+## 🧠 Concepts Used
+
+* State management using `useState`
+* Function memoization using `useCallback`
+* Side effects using `useEffect`
+* Client-side routing using `react-router-dom`
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+  components/
+    RandomStringGenerator.jsx
+  pages/
+    Home.jsx
+  App.jsx
+  main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone https://github.com/your-username/random-string-generator.git
+cd random-string-generator
+npm install
+npm run dev
+```
+
+---
+
+## 🔗 Routes
+
+| Route        | Description             |
+| ------------ | ----------------------- |
+| `/`          | Home page               |
+| `/generator` | Random string generator |
+
+---
+
+## 🌐 Live Demo
+
+(Add your Vercel link here)
+
+---
+
+## ✨ Future Improvements
+
+* Copy to clipboard feature
+* Include/exclude symbols
+* Uppercase/lowercase toggles
+* Save generated history
+
+---
+
+## 👨‍💻 Author
+
+Raj Mohanty
